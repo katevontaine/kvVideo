@@ -3,37 +3,76 @@
   <head>
     <meta charset="utf-8">
     <title>KATE VONTAINE</title>
+
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="bower_components/pagePiling.js/jquery.pagepiling.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/pagePiling.js/jquery.pagepiling.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
     <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullPage.js"></script>
     <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullPage.css">
 
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 
-    </script>
+    <script type="text/javascript">
+    		$(document).ready(function() {
+    			$('#fullpage').fullpage({
+    				verticalCentered: true,
+    				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+    				afterRender: function(){
+    					//playing the video
+    					$('video').get(0).play();
+    				}
+    			});
+    		});
+    	</script>
+
   </head>
   <body>
 
       <div id="fullpage">
 
           <div class="section" id="section0">
-                    <video autoplay="loop" muted controls id="myVideo">
-                        <source data-src="vid/mermaidVideolg.mp4" type="video/mp4">
-                  		</video>
+            <img data-src="image.png">
+
+                      <video autoplay loop muted controls id="myVideo">
+                            <source src="vid/mermaidVideo640.webm" type="video/webm">
+                      		</video>
+
                 <div class="layer">
-                  <h1>test</h1>
+                  <h1>Kate Vontaine</h1>
                 </div>
 
           </div>
 
           <div class="section" id="section1">
+
+            <div class="slide">
+              <h1>kate</h1>
+
+            </div>
+
             <h2>section 2</h2>
+            <div class="slide" id="slide2">
+              <h3>Hi</h3>
+              <h4>Hi</h4>
+            </div>
+
+            <div class="slide">
+              <h5>hello</h5>
+              <p>what the heck</p>
+            </div>
+
+
+
+
           </div>
 
 
@@ -50,6 +89,7 @@
 </div>
 
 
+<script type="text/javascript" src="main.js"></script>
 
   </body>
 </html>

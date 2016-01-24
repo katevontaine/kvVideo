@@ -41,7 +41,7 @@
 
 
   #myVideo{
-		position: absolute;
+		position: absolute;;
 		right: 0;
 		bottom: 0;
 		top:0;
@@ -56,6 +56,95 @@
    		object-fit: cover; /*cover video background */
    		z-index:3;
 	}
-.layer{
-  z-index: 5;
+
+h1{
+  font-size: 64px;
+  font-weight: lighter;
+}
+h2{
+  font-size: 44px;
+  font-weight: lighter;
+
+}
+h3{
+  font-size: 34px;
+  font-weight: lighter;
+
+}
+h4{
+  font-size: 24px;
+  font-weight: lighter;
+
+}
+p{
+  font-size: 18px;
+  font-weight: lighter;
+
+}
+.name{
+  margin-left:7%;
+  vertical-align: top;
+  font-size: 100px;
+  font-weight: 100;
+  margin-top: -12%;
+}
+
+.title{
+  //margin-left:10%;
+  vertical-align: top;
+  font-size: 74px;
+  font-weight: 100;
+  //margin-top: -20%;
+}
+.aboutMe, .marketing, .development{
+  margin-left:10%;
+  font-weight: 300;
+  width: 70%;
+  }
+a{
+  color: white;
+  padding-right: 2%;
+  text-underline: none;
+  text-decoration: none;
+  font-size: 18px;
+}
+.font{
+  font-size: 38px;
+}
+ul{
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+h2{
+  padding: 0;
+  margin:0;
+}
+}
+ul h2{
+  display: inline-block;
+
+}
+li{
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+.marClick{
+  display: none;
+  padding:0;
+  margin: 0;
+  p{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+}
+
+#click{
+  display: inline;
+  font-size: 24px;
+  vertical-align: middle;
+}
+.line{
+  display: inline-block;
 }

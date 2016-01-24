@@ -1,4 +1,16 @@
-// 
+      // var userFeed = new Instafeed({
+      //     get: 'katevontaine',
+      //     userId: '231474027',
+      //     accessToken: '231474027.1677ed0.05390bc41daf4e988c035d5fa4f77036'
+      // });
+      // userFeed.run();
+
+    $('#click').click(function() {
+        $('.marClick').toggle();
+        $('.marClick').css('display','inline-block');
+    });
+
+//
 // $(document).ready(function() {
 //     $('#fullpage').fullPage();
 // });

@@ -79,15 +79,32 @@ p {
   font-weight: 100;
   margin-top: -12%; }
 
+.name1 {
+  margin-left: 7%;
+  vertical-align: top;
+  font-size: 40px;
+  font-weight: 100;
+  margin-top: -7%; }
+
 .title {
   vertical-align: top;
   font-size: 74px;
   font-weight: 100; }
 
-.aboutMe, .marketing, .development {
+.marketing, .development {
   margin-left: 10%;
   font-weight: 300;
   width: 70%; }
+
+.aboutMe {
+  display: inline-block;
+  padding-left: 10%;
+  font-weight: 300;
+  width: 70%;
+  margin: 0; }
+  .aboutMe h2, .aboutMe h3, .aboutMe h4, .aboutMe h5 {
+    margin: 0;
+    padding: 0; }
 
 a {
   color: white;
@@ -137,3 +154,7 @@ li {
 .link {
   font-size: 34px;
   font-weight: 800; }
+
+.me {
+  max-height: 200px;
+  display: inline-block; }

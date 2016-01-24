@@ -19,7 +19,20 @@ var feed = new Instafeed({
 		// }
 });
 
+jQuery.fn.spectragram.accessData = {
+    accessToken: '[231474027.1677ed0.05390bc41daf4e988c035d5fa4f77036]',
+    clientID: '[231474027]'
+};
 
+$('ul').spectragram('getUserFeed',{
+    query: 'adrianengine'
+});
+$('div').spectragram({
+    query: 'converse',
+    max: 14,
+    size: 'big',
+    wrapEachWith: '<p></p>'
+});
 
 //
 // $(document).ready(function() {

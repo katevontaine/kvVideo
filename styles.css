@@ -97,7 +97,9 @@ a {
   font-size: 18px; }
 
 .font {
-  font-size: 38px; }
+  font-size: 38px;
+  margin: 0;
+  padding: 0; }
 
 ul {
   text-align: left;

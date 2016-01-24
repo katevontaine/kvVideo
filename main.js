@@ -1,14 +1,25 @@
-      // var userFeed = new Instafeed({
-      //     get: 'katevontaine',
-      //     userId: '231474027',
-      //     accessToken: '231474027.1677ed0.05390bc41daf4e988c035d5fa4f77036'
-      // });
-      // userFeed.run();
+$('#click').click(function() {
+    $('.marClick').toggle();
+    $('.marClick').css('display','inline-block');
+});
 
-    $('#click').click(function() {
-        $('.marClick').toggle();
-        $('.marClick').css('display','inline-block');
-    });
+var feed = new Instafeed({
+		get: 'user',
+		userId: 231474027,
+		accessToken: '231474027.1677ed0.05390bc41daf4e988c035d5fa4f77036',
+		target: 'instagram',
+		resolution: 'standard_resolution',
+    template: '<a href="{{link}}" target="_blank"><img src="http:{{image}}"></a>'
+		// after: function() {
+		// 	var el = document.getElementById('instagram');
+		// 	if (el.classList)
+		// 		el.classList.add('show');
+		// 	else
+		// 		el.className += ' ' + 'show';
+		// }
+});
+
+
 
 //
 // $(document).ready(function() {
